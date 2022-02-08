@@ -19,8 +19,37 @@ img {
 .btn {
   width: 80px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 8px;
   border-style: none;
+  color: #fafafa;
   background-color: rgb(9, 165, 255);
-  margin-top: 10px;
+  margin-top: 15px;
+  box-shadow: 8px 5px 15px rgb(128, 166, 199);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(9, 152, 247);
+  box-shadow: 10px 5px 10px rgb(99, 187, 238);
+}
+
+.form-control {
+  width: 250px;
+  height: 35px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(199, 212, 212);
+  box-shadow: 10px 5px 20px rgb(129, 139, 126);
+  outline: 0;
+}
+.form-control:hover {
+  background-color: rgb(205, 225, 241);
+  box-shadow: 10px 5px 20px rgb(157, 218, 212);
+}
+.form-control:focus {
+  background-color: rgb(205, 225, 241);
+  box-shadow: 10px 5px 20px rgb(157, 218, 212);
+}
+
+input {
+  padding-left: 10px;
 }
