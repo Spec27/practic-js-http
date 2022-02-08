@@ -26,6 +26,10 @@ img {
   margin-top: 15px;
   box-shadow: 8px 5px 15px rgb(128, 166, 199);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
 }
 .btn:hover {
   background-color: rgb(9, 152, 247);
@@ -40,7 +44,12 @@ img {
   background-color: rgb(199, 212, 212);
   box-shadow: 10px 5px 20px rgb(129, 139, 126);
   outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
 }
+
 .form-control:hover {
   background-color: rgb(205, 225, 241);
   box-shadow: 10px 5px 20px rgb(157, 218, 212);
@@ -52,4 +61,7 @@ img {
 
 input {
   padding-left: 10px;
+}
+.card {
+  margin-left: 30px;
 }
