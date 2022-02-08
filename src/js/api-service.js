@@ -1,0 +1,8 @@
+const BASE_URL = 'https://pokeapi.co/api/v2';
+function fetcPokemon(pokemonId) {
+  const url = `${BASE_URL}/pokemon/${pokemonId}`;
+  return fetch(url).then(response => {
+    return response.json();
+  });
+}
+export default { fetcPokemon };
