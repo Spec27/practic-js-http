@@ -4,13 +4,13 @@ export default class NewsApiService {
     this.page = 1;
   }
   fetchArticles() {
-    const options = {
+    /* const options = {
       headers: {
         Authorization: 'a7cff487e6274380843b0bbdb7ed9ea0',
       },
-    };
-    const url = `https://newsapi.org/v2/everything?q=${this.searchQuery}&language=en&pageSize=5&page=${this.page}`;
-    return fetch(url, options)
+    }; */
+    const url = `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&language=en&pageSize=5&page=${this.page}`;
+    return fetch(url /* options */)
       .then(r => r.json())
       .then(data => {
         this.incrementPage();
