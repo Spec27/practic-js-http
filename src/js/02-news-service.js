@@ -12,8 +12,9 @@ export default class NewsApiService {
   }
 
   fetchArticles() {
-    const url = `${BASE_URL}/everything?q=${this.searchQuery}&language=en&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}`;
-    return fetch(url /* options */)
+    return fetch(
+      `${BASE_URL}/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}`,
+    )
       .then(response => response.json())
       .then(({ articles }) => {
         this.incrementPage();
