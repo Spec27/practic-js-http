@@ -1,5 +1,5 @@
 /* const API_KEY = 'a7cff487e6274380843b0bbdb7ed9ea0'; */
-const BASE_URL = 'https://newsapi.org/v2';
+/* const BASE_URL = 'https://newsapi.org/v2'; */
 /* const options = {
   headers: {
     Authorization: API_KEY,
@@ -13,7 +13,7 @@ export default class NewsApiService {
 
   fetchArticles() {
     return fetch(
-      `${BASE_URL}/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}`,
+      `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}`,
     )
       .then(response => response.json())
       .then(({ articles }) => {
