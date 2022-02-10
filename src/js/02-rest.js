@@ -15,6 +15,9 @@ function onSearch(e) {
   e.preventDefault();
 
   newsApiService.query = e.currentTarget.elements.query.value;
+  if (newsApiService.query === '') {
+    return alert('Введи коректный запрос');
+  }
   newsApiService.resetPage();
   newsApiService.fetchArticles().then(articles => {
     clearArticlesContainer();
