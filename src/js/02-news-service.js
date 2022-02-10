@@ -7,8 +7,8 @@
 }; */
 const options = {
   headers: {
-    Connection: upgrade,
-    Upgrade: HTTP / 2.0,
+    Connection: 'upgrade',
+    Upgrade: 'HTTP / 2.0',
   },
 };
 
