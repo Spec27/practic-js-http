@@ -13,11 +13,7 @@ export default class NewsApiService {
 
   fetchArticles() {
     return fetch(
-      `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}
-      GET /newsapi.org HTTP/1
-      Host: www.example.com
-      Connection: upgrade
-      Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11`,
+      `https://newsapi.org/v2/everything?q=${this.searchQuery}&apiKey=a7cff487e6274380843b0bbdb7ed9ea0&pageSize=5&page=${this.page}`,
     )
       .then(response => response.json())
       .then(({ articles }) => {
