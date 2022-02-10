@@ -9,7 +9,7 @@ const options = {
   mode: 'cors',
   headers: {
     Connection: 'upgrade',
-    Upgrade: 'HTTP / 2.0',
+    Upgrade: 'HTTP / 2.0, HTTP / 3.0, SHTTP/1.3, IRC/6.9, RTA/x11',
   },
 };
 
