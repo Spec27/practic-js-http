@@ -6,6 +6,7 @@
   },
 }; */
 const options = {
+  mode: 'cors',
   headers: {
     Connection: 'upgrade',
     Upgrade: 'HTTP / 2.0',
